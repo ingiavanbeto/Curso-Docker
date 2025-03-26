@@ -41,3 +41,5 @@ docker ps -aq
 para eliminar varios contenedores en este caso todos
 docker rm $(docker ps -aq)
 
+para ejecutar varias instancias de nginx pero en diferentes puertos y lo hace en un solo contenedor
+docker run -p 80:80 -p 3000:80 -p 5000:80 - d nginx 
