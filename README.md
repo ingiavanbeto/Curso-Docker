@@ -35,4 +35,9 @@ docker run -p 3000:80 nginx
 para que se ejecute en segundo plano
 docker run -p 3000:80 -d nginx
 
+para ver una lista de los contenedores 
+docker ps -aq
+
+para eliminar varios contenedores en este caso todos
+docker rm $(docker ps -aq)
 
